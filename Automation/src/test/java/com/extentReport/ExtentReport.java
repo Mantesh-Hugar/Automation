@@ -1,7 +1,6 @@
 package com.extentReport;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -9,7 +8,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -55,7 +53,11 @@ public class ExtentReport {
 	test.log(Status.INFO, "This step shows usage of log(status, details)");
 	}
 	
-	
+	@Test
+	public void gitTest()
+	{
+		System.out.println("initial commit");
+	}
 
 	@AfterTest
 	public void tearDown() {
